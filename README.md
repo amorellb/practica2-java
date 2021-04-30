@@ -1,1 +1,1 @@
-# practica2-java
+# practica2Java
