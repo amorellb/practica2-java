@@ -11,9 +11,9 @@ public class Util {
         String letter;
         do {
             System.out.println(" ");
-            System.out.println("-----------------------------------------------------");
-            System.out.println(" Choose an option (a, b, c, d, e, f, g, h, i, quit):");
-            System.out.println("-----------------------------------------------------");
+            System.out.println("\u001B[34m-----------------------------------------------------\u001B[0m");
+            System.out.println("\u001B[34m Choose an option (a, b, c, d, e, f, g, h, i, quit):\u001B[0m");
+            System.out.println("\u001B[34m-----------------------------------------------------\u001B[0m");
             letter = input.nextLine();
         } while (!isRightOption(letter));
         return letter;
@@ -29,7 +29,7 @@ public class Util {
         }
         if (!flag) {
             System.out.println(" ");
-            System.out.println("Not a valid option");
+            System.out.println("\u001B[31mNot a valid option\\u001B[0m");
         }
         return flag;
     }
@@ -50,7 +50,7 @@ public class Util {
             return true;
         } catch (NumberFormatException nfe) {
             System.out.println(" ");
-            System.out.println("Not a valid input");
+            System.out.println("\u001B[31mNot a valid input\u001B[0m");
             return false;
         }
     }
@@ -101,7 +101,7 @@ public class Util {
         }
         if (!flag) {
             System.out.println(" ");
-            System.out.println("The input letter is not a vowel");
+            System.out.println("\u001B[31mThe input letter is not a vowel\u001B[0m");
         }
         return flag;
     }

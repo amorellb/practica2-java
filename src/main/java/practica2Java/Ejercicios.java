@@ -18,7 +18,7 @@ public class Ejercicios {
             }
         }
         System.out.println(" ");
-        System.out.println("Numbers: " + numberString);
+        System.out.println("\u001B[32mNumbers: " + numberString + "\u001B[0m");
     }
 
     // b
@@ -32,7 +32,7 @@ public class Ejercicios {
             }
         }
         System.out.println(" ");
-        System.out.println("Numbers in reverse order: " + numberString);
+        System.out.println("\u001B[32mNumbers in reverse order: " + numberString + "\u001B[0m");
     }
 
     // c
@@ -51,9 +51,9 @@ public class Ejercicios {
             }
         }
         System.out.println(" ");
-        System.out.println("The avg of positive numbers is: " + Util.calculateAvg(positiveNums));
-        System.out.println("The avg of negative numbers is: " + Util.calculateAvg(negativeNums));
-        System.out.println("The count of zeros is: " + zeroCount);
+        System.out.println("\u001B[32mThe avg of positive numbers is: " + Util.calculateAvg(positiveNums) + "\u001B[0m");
+        System.out.println("\u001B[32mThe avg of negative numbers is: " + Util.calculateAvg(negativeNums) + "\u001B[0m");
+        System.out.println("\u001B[32mThe count of zeros is: " + zeroCount + "\u001B[0m");
     }
 
     // d
@@ -106,7 +106,7 @@ public class Ejercicios {
         String[] letters = word.split("");
         for (int i = 0; i < word.length(); i++) {
             char character = word.charAt(i);
-            System.out.println("The ASCII code of " + letters[i] + " is: "  + (int) character);
+            System.out.println("\u001B[32mThe ASCII code of " + letters[i] + " is: "  + (int) character + "\u001B[0m");
         }
     }
 }

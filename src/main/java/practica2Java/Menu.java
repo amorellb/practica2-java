@@ -17,16 +17,16 @@ public class Menu {
                     Ejercicios.printAvgZeroCount();
                     break;
                 case "d":
-                    System.out.println("The number of characters of the sentence are: " + Ejercicios.countChars(Util.askSentence()));
+                    System.out.println("\u001B[32mThe number of characters of the sentence are: " + Ejercicios.countChars(Util.askSentence()) + "\u001B[0m");
                     break;
                 case "e":
-                    System.out.println(Ejercicios.printReverseSentence(Util.askSentence()));
+                    System.out.println("\u001B[32m" + Ejercicios.printReverseSentence(Util.askSentence()) + "\u001B[0m");
                     break;
                 case "f":
-                    System.out.println(Ejercicios.printSentenceWithoutSpaces(Util.askSentence()));
+                    System.out.println("\u001B[32m" + Ejercicios.printSentenceWithoutSpaces(Util.askSentence()) + "\u001B[0m");
                     break;
                 case "g":
-                    System.out.println(Ejercicios.concatTwoStrings(Util.askSentence(), Util.askSentence()));
+                    System.out.println("\u001B[32m" + Ejercicios.concatTwoStrings(Util.askSentence(), Util.askSentence()) + "\u001B[0m");
                     break;
                 case "h":
                     Ejercicios.changeStringVowels(Util.askSentence(), Util.askVowel());
@@ -38,13 +38,13 @@ public class Menu {
                     break;
                 default:
                     System.out.println(" ");
-                    System.out.println("Oops! Something went wrong");
+                    System.out.println("\u001B[31mOops! Something went wrong\u001B[0m");
                     break;
             }
         } while (!option.toUpperCase().equals(Options.QUIT.toString()));
         System.out.println(" ");
-        System.out.println("-----------------------------------------------------");
-        System.out.println("                      See you!");
-        System.out.println("-----------------------------------------------------");
+        System.out.println("\u001B[34m-----------------------------------------------------\u001B[0m");
+        System.out.println("\u001B[34m                      See you!\u001B[0m");
+        System.out.println("\u001B[34m-----------------------------------------------------\u001B[0m");
     }
 }
