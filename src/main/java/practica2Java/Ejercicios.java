@@ -9,7 +9,7 @@ public class Ejercicios {
 
     // a
     public static void showFiveNumbers() {
-        int[] numbers = Util.populateArray();
+        int[] numbers = ScanInput.populateArray();
         for (int i = 0; i < numbers.length; i++) {
             if (i < numbers.length - 1) {
                 numberString.append(numbers[i]).append(", ");
@@ -23,7 +23,7 @@ public class Ejercicios {
 
     // b
     public static void showFiveNumbersReverse() {
-        int[] numbers = Util.populateArray();
+        int[] numbers = ScanInput.populateArray();
         for (int i = numbers.length - 1; i >= 0; i--) {
             if (i > 0) {
                 numberString.append(numbers[i]).append(", ");
@@ -37,7 +37,7 @@ public class Ejercicios {
 
     // c
     public static void printAvgZeroCount() {
-        int[] numbers = Util.populateArray();
+        int[] numbers = ScanInput.populateArray();
         List<Integer> positiveNums = new ArrayList<>();
         List<Integer> negativeNums = new ArrayList<>();
         int zeroCount = 0;
@@ -51,8 +51,8 @@ public class Ejercicios {
             }
         }
         System.out.println(" ");
-        System.out.println("\u001B[32mThe avg of positive numbers is: " + Util.calculateAvg(positiveNums) + "\u001B[0m");
-        System.out.println("\u001B[32mThe avg of negative numbers is: " + Util.calculateAvg(negativeNums) + "\u001B[0m");
+        System.out.println("\u001B[32mThe avg of positive numbers is: " + ScanInput.calculateAvg(positiveNums) + "\u001B[0m");
+        System.out.println("\u001B[32mThe avg of negative numbers is: " + ScanInput.calculateAvg(negativeNums) + "\u001B[0m");
         System.out.println("\u001B[32mThe count of zeros is: " + zeroCount + "\u001B[0m");
     }
 

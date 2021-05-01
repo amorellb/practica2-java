@@ -3,7 +3,7 @@ package practica2Java;
 import java.util.List;
 import java.util.Scanner;
 
-public class Util {
+public class ScanInput {
 
     private static final Scanner input = new Scanner(System.in);
 
