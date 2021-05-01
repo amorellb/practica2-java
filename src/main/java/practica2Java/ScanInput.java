@@ -29,7 +29,7 @@ public class ScanInput {
         }
         if (!flag) {
             System.out.println(" ");
-            System.out.println("\u001B[31mNot a valid option\\u001B[0m");
+            System.out.println("\u001B[31mNot a valid option\u001B[0m");
         }
         return flag;
     }

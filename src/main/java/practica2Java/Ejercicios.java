@@ -73,7 +73,7 @@ public class Ejercicios {
         for (int i = words.length - 1; i >= 0; i--) {
             reverseSentence.append(new StringBuilder(words[i]).reverse()).append(" ");
         }
-        return reverseSentence.toString();
+        return reverseSentence.toString().trim();
     }
 
     // f
@@ -83,12 +83,12 @@ public class Ejercicios {
         for (String word : words) {
             noSpaceSentence.append(word);
         }
-        return noSpaceSentence.toString();
+        return noSpaceSentence.toString().trim();
     }
 
     // g
     public static String concatTwoStrings(String firstString, String secondString) {
-        return firstString.concat(secondString);
+        return firstString.concat(secondString).trim();
     }
 
     // h
