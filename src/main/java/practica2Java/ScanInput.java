@@ -12,8 +12,18 @@ public class ScanInput {
         do {
             System.out.println(" ");
             System.out.println("\u001B[34m-----------------------------------------------------\u001B[0m");
-            System.out.println("\u001B[34m Choose an option (a, b, c, d, e, f, g, h, i, quit):\u001B[0m");
+            System.out.println("\u001B[34m                  Choose an option\u001B[0m");
             System.out.println("\u001B[34m-----------------------------------------------------\u001B[0m");
+            System.out.println("\u001B[36mMostrar los valores introducidos (a)\u001B[0m");
+            System.out.println("\u001B[33mMostrar los valores introducidos en orden inverso (b)\u001B[0m");
+            System.out.println("\u001B[36mMostrar la media de los valores introducidos y contar los ceros (c)\u001B[0m");
+            System.out.println("\u001B[33mContar caracteres de un texto (d)\u001B[0m");
+            System.out.println("\u001B[36mInvertir texto (e)\u001B[0m");
+            System.out.println("\u001B[33mEliminar espacios de un texto (f)\u001B[0m");
+            System.out.println("\u001B[36mConcatenar cadenas de texto (g)\u001B[0m");
+            System.out.println("\u001B[33mSubstituir vocales de un texto (h)\u001B[0m");
+            System.out.println("\u001B[36mMostrar el código ASCII de los caracteres introducidos (i)\u001B[0m");
+            System.out.println("\u001B[33mQuit\u001B[0m");
             letter = input.nextLine();
         } while (!isRightOption(letter));
         return letter;
